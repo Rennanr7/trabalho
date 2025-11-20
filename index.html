@@ -1,0 +1,92 @@
+html:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>EcoPontos de Porto Velho</title>
+  <meta name="description" content="Mapa e lista de pontos de coleta seletiva e reciclagem em Porto Velho." />
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- Header/Nav -->
+  <header>
+    <div class="nav-inner">
+      <div class="brand"><span class="brand-green">Eco</span>Map PVH</div>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#pontos">Pontos de Coleta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="section-hero" aria-label="Início">
+      <div class="hero-inner">
+        <h1>Mapeamento de Pontos de <span class="highlight">Coleta de Resíduos Eletrônicos</span> em Porto Velho</h1>
+        <p>Encontre facilmente os pontos de coleta seletiva e reciclagem mais próximos de você. Juntos por uma Porto Velho mais sustentável!</p>
+        <a class="btn" href="#mapa" id="verMapaBtn">Ver Mapa</a>
+      </div>
+    </section>
+
+    <!-- imagem -->
+    <section id="mapa" class="section-map" aria-label="Mapa interativo (imagem)">
+        
+      <div class="section-inner">
+        <h2>Mapa Interativo</h2>
+        <p>Explore os pontos de coleta seletiva e reciclagem em Porto Velho</p>
+
+        <div class="mapa-container" role="img" aria-label="Mapa dos ecopontos de Porto Velho">
+        <div class="map-marker marker-amarelo" title="WR Serviços"></div>
+        <div class="map-marker marker-verde" title="Ecoponto - Porto Velho Shopping"></div>
+        <div class="map-marker marker-azul" title="Catanorte"></div>
+          <img src="mapa-porto-velho.png.jpeg" alt="Mapa dos ecopontos de Porto Velho">
+        </div>
+      </div>
+    </section>
+
+    <!-- Pontos de coleta -->
+    <section id="pontos" class="section-points" aria-label="Pontos de coleta">
+      <div class="section-inner">
+        <h2>Pontos de Coleta</h2>
+
+        <div class="cards">
+          <article class="card" aria-labelledby="p1">
+            <h3 id="p1">🟢 Ecoponto no Porto Velho Shopping</h3>
+            <p>♻️ Eletrodomésticos, baterias, celulares, etc.<br>
+            📍 Espaço 253, 2° piso do Porto Velho Shopping.</p>
+             🔗 <a href="https://www.portovelho.ro.gov.br/artigo/44291/reciclagem-porto-velho-tem-dez-ecopontos-que-facilitam-o-descarte-correto-do-lixo" target="_blank" rel="noopener noreferrer">Mais informações</a></p>
+          </article>
+
+          <article class="card" aria-labelledby="p2">
+            <h3 id="p2">🔵 Cooperativa de Materiais Recicláveis (Catanorte)</h3>
+            <p>♻️ Recebimento de eletroeletrônicos via logística reversa.<br>
+            📍 Vila Princesa, Porto Velho - RO.</p>
+            🔗 <a href="http://www.catanorte.com.br/" target="_blank" rel="noopener noreferrer">Site oficial</a></p>
+          </article>
+
+          <article class="card" aria-labelledby="p3">
+            <h3 id="p3">🟡 WR Ambiental</h3>
+            <p>♻️ Resíduos eletrônicos em geral.<br>
+            📍 Rua Projetada, nº 4208 – Bairro Nova Esperança, Porto Velho.</p>
+            🔗 <a href="https://www.instagram.com/wr_ambiental?igsh=MTZoODFiYmg2bndmdQ==" target="_blank" rel="noopener noreferrer">Mais informações</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">© <span id="ano"></span> EcoMap PVH — Porto Velho</div>
+  </footer>
+  
+</body>
+</html>
